@@ -5,6 +5,7 @@ exports.seed = function(knex, Promise) {
       return knex("actions").insert([
         {
           id: 1,
+          project_id: 1,
           description: "finished action",
           notes: "finished action",
           completed: true

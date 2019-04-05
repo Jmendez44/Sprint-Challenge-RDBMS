@@ -6,12 +6,12 @@ exports.up = function(knex, Promise) {
       .foreign("project_id")
       .references("id")
       .on("projects");
-    actions.string("description").notNullable();
+    actions.string("description");
     actions.text("notes");
     actions.boolean("completed").defaultTo(false);
   });
 };
 
 exports.down = function(knex, Promise) {
-  return knex.scheam.dropTableIfExists("actions");
+  return knex.schema.dropTableIfExists("actions");
 };
