@@ -2,6 +2,9 @@
   "name": "Sprint-Challenge-RDBMS",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js"
+  },
   "repository": "https://github.com/Jmendez44/Sprint-Challenge-RDBMS.git",
   "author": "jmendez44 <jenuel.mendez@gmail.com>",
   "license": "MIT",
